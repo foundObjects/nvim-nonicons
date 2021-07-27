@@ -1,72 +1,41 @@
-# nvim-nonicons
+# Nerd Font-Friendly nvim-nonicons
 
+## This is a fork
+This is a fork of the work done by [yamatsum](https://github.com/yamatsum/nvim-nonicons).
+
+The only difference between this branch and the original is that the glyph mappings have been updating so as to not conflict with Nerd Font glyphs.
+
+See also: [nonicons](https://github.com/arnamak/nonicons)
+
+## Summary
 Icon set for neovim plugins and settings.
 Collection of configurations for [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons).
 
-This repository is experimental and if there is demand, I'm going to create another plugin independent of nvim-web-devicons. 
+## Prerequisites
 
-## Features
-- A familiar UI with the icons used on github
-- Not only file type, but also mode and completion icons are available
-- Easy-to-read design even with a small font size (16 x 16)
-
-## Requirements
-
-- [A font](https://github.com/yamatsum/nonicons)
+- [The nonicons glyph set](https://github.com/arnamak/nonicons)
+- [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
 ## Installation
-
-```lua
-use 'yamatsum/nvim-nonicons'
-
--- if use nvim-web-devicons
+```
 use {
-  'yamatsum/nvim-nonicons',
+  'arnamak/nvim-nonicons',
   requires = {'kyazdani42/nvim-web-devicons'}
 }
 ```
 
 ## Usage
 
-### iTerm
-Set "non-ascii" font to nonicons in your favorite terminal settings.
+You'll need to load the `nonicons` font in your terminal. Different terminal emulators handle this step in different ways.
 
-e.g.) [iTerm](https://iterm2.com/documentation-fonts.html)
+See the instructions at [nonicons](https://github.com/arnamak/nonicons) for more details.
 
-By using two fonts, you can use your favorite font as the main font.
-
-If the terminal can only use one font, you need to use the nonicons patched font.
-
-### Kitty
-
-After installing the font, add the following line to your `kitty.conf` file:
-
-`symbol_map U+f101-U+f208 nonicons`
-
-
+Once you've done that, this plugin will enable to `get` icons within your neovim configuration as such:
 ```lua
 local icons = require "nvim-nonicons"
 
 icons.get("file")
 ```
 
-## Gallery
-### nvim-telescope/telescope.nvim
-![telescope.nvim](https://user-images.githubusercontent.com/42740055/110775102-dfbd4200-82a1-11eb-9393-64240026c761.png)
-
-### kyazdani42/nvim-tree.lua
-![nvim-tree.lua](https://user-images.githubusercontent.com/42740055/110775095-df24ab80-82a1-11eb-9d96-9cfd32dc4388.png)
-
-### glepnir/galaxyline.nvim
-![galaxyline.nvim1](https://user-images.githubusercontent.com/42740055/110775089-dd5ae800-82a1-11eb-9d95-f9b43a6b616e.png)
-![galaxyline.nvim2](https://user-images.githubusercontent.com/42740055/110775090-ddf37e80-82a1-11eb-9b52-75bcd3f9f568.png)
-![galaxyline.nvim3](https://user-images.githubusercontent.com/42740055/110775093-de8c1500-82a1-11eb-81ad-321c377aab27.png)
-
-### nvim-lua/completion-nvim
-![completion-nvim1](https://user-images.githubusercontent.com/42740055/110829794-dcdf4300-82db-11eb-9650-d905ab468633.png)
-![completion-nvim1](https://user-images.githubusercontent.com/42740055/110829801-dea90680-82db-11eb-890d-6aa6381c53d1.png)
-
- cf.
- - [VSCode IntelliSense](https://code.visualstudio.com/docs/editor/intellisense)
- - [Atomicons](https://github.com/atom/atom/pull/14657)
-
+## Thank yamatsum
+- This repo only exists to make my life easier when I inevitably need to do this again after changing my environment. The icons are not mine, the idea isn't mine, and it's extremely unlikely I do anything in terms of maintenance. So if you have a 'thanks' in you, shoot it over to [yamatsum](https://github.com/yamatsum/nonicons)
