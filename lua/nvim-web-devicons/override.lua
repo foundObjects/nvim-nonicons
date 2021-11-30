@@ -441,6 +441,11 @@ devicons.set_icon({
     color = "#a074c4",
     name = "MixLock",
   },
+  ["mjs"] = {
+    icon = get("javascript"),
+    color = "#f1e05a",
+    name = "Mjs",
+  },
   ["node_modules"] = {
     icon = get("npm"),
     color = "#E8274B",
