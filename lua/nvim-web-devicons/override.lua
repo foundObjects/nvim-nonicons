@@ -591,6 +591,11 @@ devicons.set_icon({
     color = "#6d8086",
     name = "Toml",
   },
+  ["txt"] = {
+    icon = get("file"),
+    color = "#89e051",
+    name = "Txt",
+  },
   ["ts"] = {
     icon = get("typescript"),
     color = "#519aba",
