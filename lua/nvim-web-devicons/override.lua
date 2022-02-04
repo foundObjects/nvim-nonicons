@@ -1097,7 +1097,7 @@ devicons.set_icon({
     name = "Tex",
   },
   ["toml"] = {
-    icon = get("gear"),
+    icon = get("file-code"),
     color = "#6d8086",
     cterm_color = "66",
     name = "Toml",
