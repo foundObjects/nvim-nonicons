@@ -2,7 +2,7 @@ local icons = require("nvim-nonicons.mapping")
 local devicons = require("nvim-web-devicons")
 
 local function get(name)
-  return vim.fn.nr2char(icons[name])
+  return vim.fn.nr2char(icons[name]) .. ' '
 end
 
 devicons.set_icon({
