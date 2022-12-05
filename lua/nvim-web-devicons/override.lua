@@ -2,7 +2,7 @@ local icons = require("nvim-nonicons.mapping")
 local devicons = require("nvim-web-devicons")
 
 local function get(name)
-  return vim.fn.nr2char(icons[name]) .. ' '
+  return vim.fn.nr2char(icons[name]) .. " "
 end
 
 local palette = {
@@ -28,7 +28,7 @@ local palette = {
 devicons.set_icon({
   -- ["gruntfile"] = {
   --   icon = "",
-  --   color = "#e37933",
+  --   color = palette.orange,
   --   name = "Gruntfile"
   -- },
   -- ["gulpfile"] = {
@@ -56,11 +56,11 @@ devicons.set_icon({
   --   color = "#cb4a32",
   --   name = "Ppt"
   -- },
-  -- ["xml"] = {
-  --   icon = "謹",
-  --   color = "#e37933",
-  --   name = "Xml"
-  -- },
+  ["xml"] = {
+    icon = get("file-code"),
+    color = palette.orange,
+    name = "Xml",
+  },
   -- ["webpack"] = {
   --   icon = "ﰩ",
   --   color = palette.bright_blue,
@@ -71,36 +71,36 @@ devicons.set_icon({
   --   color = "#854CC7",
   --   name = "SettingsJson"
   -- },
-  -- ["cs"] = {
-  --   icon = "",
-  --   color = "#596706",
-  --   name = "Cs"
-  -- },
+  ["cs"] = {
+    icon = get("c-sharp"),
+    color = palette.green,
+    name = "Cs",
+  },
   -- ["procfile"] = {
   --   icon = "",
   --   color = palette.magenta,
   --   name = "Procfile"
   -- },
-  -- [".bashprofile"] = {
-  --   icon = "",
-  --   color = "#89e051",
-  --   name = "BashProfile"
-  -- },
-  -- [".bashrc"] = {
-  --   icon = "",
-  --   color = "#89e051",
-  --   name = "Bashrc"
-  -- },
-  -- [".babelrc"] = {
-  --   icon = "ﬥ",
-  --   color = palette.yellow,
-  --   name = "Babelrc"
-  -- },
-  -- [".ds_store"] = {
-  --   icon = "",
-  --   color = palette.bright_black,
-  --   name = "DsStore"
-  -- },
+  [".bashprofile"] = {
+    icon = get("gear"),
+    color = palette.bright_green,
+    name = "BashProfile",
+  },
+  [".bashrc"] = {
+    icon = get("gear"),
+    color = palette.bright_green,
+    name = "Bashrc",
+  },
+  [".babelrc"] = {
+    icon = get("babel"),
+    color = palette.yellow,
+    name = "Babelrc",
+  },
+  [".ds_store"] = {
+    icon = get("gear"),
+    color = palette.bright_black,
+    name = "DsStore",
+  },
   ["git"] = {
     icon = get("git-commit"),
     color = palette.bright_black,
@@ -186,26 +186,26 @@ devicons.set_icon({
   --   color = palette.yellow,
   --   name = "Ai"
   -- },
-  -- ["awk"] = {
-  --   icon = "",
-  --   color = "#4d5a5e",
-  --   name = "Awk"
-  -- },
+  ["awk"] = {
+    icon = get("terminal"),
+    color = palette.black,
+    name = "Awk",
+  },
   ["bash"] = {
     icon = get("terminal"),
     color = palette.bright_black,
     name = "Bash",
   },
-  -- ["bat"] = {
-  --   icon = "",
-  --   color = "#C1F12E",
-  --   name = "Bat"
-  -- },
-  -- ["bmp"] = {
-  --   icon = "",
-  --   color = palette.magenta,
-  --   name = "Bmp"
-  -- },
+  ["bat"] = {
+    icon = get("gear"),
+    color = palette.bright_green,
+    name = "Bat",
+  },
+  ["bmp"] = {
+    icon = get("image"),
+    color = palette.magenta,
+    name = "Bmp",
+  },
   ["c"] = {
     icon = get("c"),
     color = palette.bright_blue,
@@ -236,11 +236,11 @@ devicons.set_icon({
   --   color = palette.bright_blue,
   --   name = "ClojureJS"
   -- },
-  -- ["cmakelists.txt"] = {
-  --   icon = "",
-  --   color = palette.bright_black,
-  --   name = "CmakeLists"
-  -- },
+  ["cmakelists.txt"] = {
+    icon = get("gear"),
+    color = palette.bright_black,
+    name = "CmakeLists",
+  },
   -- ["coffee"] = {
   --   icon = "",
   --   color = palette.yellow,
@@ -311,36 +311,36 @@ devicons.set_icon({
   --   color = palette.bright_blue,
   --   name = "Edn"
   -- },
-  -- ["eex"] = {
-  --   icon = "",
-  --   color = palette.magenta,
-  --   name = "Eex"
-  -- },
+  ["eex"] = {
+    icon = get("elixir"),
+    color = palette.magenta,
+    name = "Eex",
+  },
   -- ["ejs"] = {
   --   icon = "",
   --   color = palette.yellow,
   --   name = "Ejs"
   -- },
-  -- ["elm"] = {
-  --   icon = "",
-  --   color = palette.bright_blue,
-  --   name = "Elm"
-  -- },
+  ["elm"] = {
+    icon = get("elm"),
+    color = palette.bright_blue,
+    name = "Elm",
+  },
   -- ["erl"] = {
   --   icon = "",
   --   color = "#B83998",
   --   name = "Erl"
   -- },
-  -- ["ex"] = {
-  --   icon = "",
-  --   color = palette.magenta,
-  --   name = "Ex"
-  -- },
-  -- ["exs"] = {
-  --   icon = "",
-  --   color = palette.magenta,
-  --   name = "Exs"
-  -- },
+  ["ex"] = {
+    icon = get("elixir"),
+    color = palette.magenta,
+    name = "Ex",
+  },
+  ["exs"] = {
+    icon = get("elixir"),
+    color = palette.magenta,
+    name = "Exs",
+  },
   -- ["f#"] = {
   --   icon = "",
   --   color = palette.bright_blue,
@@ -353,8 +353,8 @@ devicons.set_icon({
   -- },
   ["fish"] = {
     icon = get("terminal"),
-    color = "#4d5a5e",
-    name = "Fish"
+    color = palette.black,
+    name = "Fish",
   },
   -- ["fs"] = {
   --   icon = "",
@@ -381,11 +381,11 @@ devicons.set_icon({
   --   color = palette.bright_red,
   --   name = "Gemspec"
   -- },
-  -- ["gif"] = {
-  --   icon = "",
-  --   color = palette.magenta,
-  --   name = "Gif"
-  -- },
+  ["gif"] = {
+    icon = get("image"),
+    color = palette.magenta,
+    name = "Gif",
+  },
   ["go"] = {
     icon = get("go"),
     color = palette.bright_blue,
@@ -446,11 +446,16 @@ devicons.set_icon({
     color = palette.yellow,
     name = "Ico",
   },
-  -- ["ini"] = {
-  --   icon = "",
-  --   color = palette.bright_black,
-  --   name = "Ini"
-  -- },
+  ["ini"] = {
+    icon = get("gear"),
+    color = palette.bright_black,
+    name = "Ini",
+  },
+  ["ionic.config.json"] = {
+    icon = get("ionic"),
+    color = palette.bright_blue,
+    name = "ConfigIonic",
+  },
   ["java"] = {
     icon = get("java"),
     color = palette.bright_red,
@@ -481,16 +486,16 @@ devicons.set_icon({
     color = palette.bright_blue,
     name = "Jsx",
   },
-  -- ["ksh"] = {
-  --   icon = "",
-  --   color = "#4d5a5e",
-  --   name = "Ksh"
-  -- },
-  -- ["leex"] = {
-  --   icon = "",
-  --   color = palette.magenta,
-  --   name = "Leex"
-  -- },
+  ["ksh"] = {
+    icon = get("terminal"),
+    color = palette.black,
+    name = "Ksh",
+  },
+  ["leex"] = {
+    icon = get("elixir"),
+    color = palette.magenta,
+    name = "Leex",
+  },
   -- ["less"] = {
   --   icon = "",
   --   color = "#563d7c",
@@ -531,11 +536,11 @@ devicons.set_icon({
     color = palette.bright_blue,
     name = "Mdx",
   },
-  -- ["mix.lock"] = {
-  --   icon = "",
-  --   color = palette.magenta,
-  --   name = "MixLock"
-  -- },
+  ["mix.lock"] = {
+    icon = get("elixir"),
+    color = palette.magenta,
+    name = "MixLock",
+  },
   -- ["mjs"] = {
   --   icon = "",
   --   color = "#f1e05a",
@@ -543,17 +548,22 @@ devicons.set_icon({
   -- },
   -- ["ml"] = {
   --   icon = "λ",
-  --   color = "#e37933",
+  --   color = palette.orange,
   --   name = "Ml"
   -- },
   -- ["mli"] = {
   --   icon = "λ",
-  --   color = "#e37933",
+  --   color = palette.orange,
   --   name = "Mli"
   -- },
+  ["moon"] = {
+    icon = get("moon"),
+    color = palette.bright_red,
+    name = "Moonscript",
+  },
   -- ["mustache"] = {
   --   icon = "",
-  --   color = "#e37933",
+  --   color = palette.orange,
   --   name = "Mustache"
   -- },
   -- ["nix"] = {
@@ -561,6 +571,21 @@ devicons.set_icon({
   --   color = "#7ebae4",
   --   name = "Nix"
   -- },
+  ["next.config.js"] = {
+    icon = get("next"),
+    color = palette.black,
+    name = "ConfigNext",
+  },
+  ["next.config.mjs"] = {
+    icon = get("next"),
+    color = palette.black,
+    name = "ConfigNext",
+  },
+  ["nginx.conf"] = {
+    icon = get("nginx"),
+    color = palette.green,
+    name = "ConfigNginx",
+  },
   ["node_modules"] = {
     icon = get("npm"),
     color = palette.bright_red,
@@ -601,11 +626,11 @@ devicons.set_icon({
   --   color = "#302B6D",
   --   name = "Pp"
   -- },
-  -- ["ps1"] = {
-  --   icon = "",
-  --   color = "#4d5a5e",
-  --   name = "PromptPs1"
-  -- },
+  ["prisma"] = {
+    icon = get("prisma"),
+    color = palette.bright_white,
+    name = "Prisma",
+  },
   -- ["psb"] = {
   --   icon = "",
   --   color = palette.bright_blue,
@@ -616,6 +641,11 @@ devicons.set_icon({
   --   color = palette.bright_blue,
   --   name = "Psd"
   -- },
+  ["ps1"] = {
+    icon = get("terminal"),
+    color = palette.black,
+    name = "PromptPs1",
+  },
   ["py"] = {
     icon = get("python"),
     color = palette.bright_blue,
@@ -651,11 +681,6 @@ devicons.set_icon({
     color = palette.bright_red,
     name = "Rakefile",
   },
-  ["rb"] = {
-    icon = get("ruby"),
-    color = palette.bright_red,
-    name = "Rb",
-  },
   -- ["rlib"] = {
   --   icon = "",
   --   color = "#dea584",
@@ -671,6 +696,11 @@ devicons.set_icon({
   --   color = palette.bright_green,
   --   name = "Rproj"
   -- },
+  ["rb"] = {
+    icon = get("ruby"),
+    color = palette.bright_red,
+    name = "Rb",
+  },
   ["rs"] = {
     icon = get("rust"),
     color = palette.bright_black,
@@ -686,11 +716,6 @@ devicons.set_icon({
     color = palette.bright_red,
     name = "Scala",
   },
-  ["sh"] = {
-    icon = get("terminal"),
-    color = palette.bright_black,
-    name = "Sh",
-  },
   -- ["slim"] = {
   --   icon = "",
   --   color = palette.bright_red,
@@ -701,10 +726,10 @@ devicons.set_icon({
   --   color = "#854CC7",
   --   name = "Sln"
   -- },
-  ["sql"] = {
-    icon = get("database"),
+  ["sh"] = {
+    icon = get("terminal"),
     color = palette.bright_black,
-    name = "Sql",
+    name = "Sh",
   },
   -- ["styl"] = {
   --   icon = "",
@@ -716,15 +741,15 @@ devicons.set_icon({
   --   color = "#854CC7",
   --   name = "Suo"
   -- },
-  ["svg"] = {
-    icon = get("key-asterisk"),
+  ["svelte"] = {
+    icon = get("svelte"),
     color = palette.orange,
-    name = "Svg",
+    name = "Svelte",
   },
-  ["swift"] = {
-    icon = get("swift"),
-    color = palette.orange,
-    name = "Swift",
+  ["sql"] = {
+    icon = get("database"),
+    color = palette.bright_black,
+    name = "Sql",
   },
   -- ["t"] = {
   --   icon = "",
@@ -736,56 +761,71 @@ devicons.set_icon({
   --   color = "#3D6117",
   --   name = "Tex"
   -- },
+  ["svg"] = {
+    icon = get("key-asterisk"),
+    color = palette.orange,
+    name = "Svg",
+  },
+  ["swift"] = {
+    icon = get("swift"),
+    color = palette.orange,
+    name = "Swift",
+  },
   ["toml"] = {
     icon = get("toml"),
     color = palette.bright_black,
     name = "Toml",
-  },
-  ["ts"] = {
-    icon = get("typescript"),
-    color = palette.bright_blue,
-    name = "Ts",
-  },
-  ["tsx"] = {
-    icon = get("react"),
-    color = palette.bright_blue,
-    name = "Tsx",
   },
   -- ["twig"] = {
   --   icon = "",
   --   color = palette.bright_green,
   --   name = "Twig"
   -- },
-  ["vim"] = {
-    icon = get("vim"),
-    color = palette.bright_green,
-    name = "Vim",
+  ["terminal"] = {
+    icon = get("terminal"),
+    color = palette.bright_black,
+    name = "Terminal",
   },
-  ["vue"] = {
-    icon = get("vue"),
-    color = palette.bright_green,
-    name = "Vue",
+  ["ts"] = {
+    icon = get("typescript"),
+    color = palette.bright_blue,
+    name = "Ts",
   },
   -- ["webmanifest"] = {
   --   icon = "",
   --   color = "#f1e05a",
   --   name = "Webmanifest"
   -- },
+  ["tsx"] = {
+    icon = get("react"),
+    color = palette.bright_blue,
+    name = "Tsx",
+  },
+  ["vim"] = {
+    icon = get("vim"),
+    color = palette.bright_green,
+    name = "Vim",
+  },
+  -- ["xul"] = {
+  --   icon = "",
+  --   color = palette.orange,
+  --   name = "Xul"
+  -- },
+  ["vue"] = {
+    icon = get("vue"),
+    color = palette.bright_green,
+    name = "Vue",
+  },
   ["webp"] = {
     icon = get("image"),
     color = palette.magenta,
     name = "Webp",
   },
-  -- ["xcplayground"] = {
-  --   icon = "",
-  --   color = "#e37933",
-  --   name = "XcPlayground"
-  -- },
-  -- ["xul"] = {
-  --   icon = "",
-  --   color = "#e37933",
-  --   name = "Xul"
-  -- },
+  ["xcplayground"] = {
+    icon = get("swift"),
+    color = palette.orange,
+    name = "XcPlayground",
+  },
   ["yaml"] = {
     icon = get("yaml"),
     color = palette.bright_black,
@@ -795,16 +835,6 @@ devicons.set_icon({
     icon = get("yaml"),
     color = palette.bright_black,
     name = "Yml",
-  },
-  ["zsh"] = {
-    icon = get("terminal"),
-    color = palette.bright_black,
-    name = "Zsh",
-  },
-  ["terminal"] = {
-    icon = get("terminal"),
-    color = palette.bright_black,
-    name = "Terminal",
   },
   -- ["pdf"] = {
   --   icon = "",
@@ -816,6 +846,11 @@ devicons.set_icon({
   --   color = "#F88A02",
   --   name = "Kotlin"
   -- }
+  ["zsh"] = {
+    icon = get("terminal"),
+    color = palette.bright_black,
+    name = "Zsh",
+  },
 })
 
 devicons.set_default_icon(get("file"), palette.bright_black)
