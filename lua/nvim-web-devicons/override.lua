@@ -771,20 +771,26 @@ devicons.set_icon({
     color = palette.orange,
     name = "Swift",
   },
-  ["toml"] = {
-    icon = get("toml"),
+  ["terminal"] = {
+    icon = get("terminal"),
     color = palette.bright_black,
-    name = "Toml",
+    name = "Terminal",
   },
   -- ["twig"] = {
   --   icon = "",
   --   color = palette.bright_green,
   --   name = "Twig"
   -- },
-  ["terminal"] = {
-    icon = get("terminal"),
+    ["toml"] = {
+    icon = get("toml"),
     color = palette.bright_black,
-    name = "Terminal",
+    name = "Toml",
+  },
+  ["txt"] = {
+    icon = get("file"),
+    color = "#89e051",
+    cterm_color = "113",
+    name = "Txt",
   },
   ["ts"] = {
     icon = get("typescript"),
